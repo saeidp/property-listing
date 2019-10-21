@@ -43,6 +43,18 @@ html {
   overflow-x: hidden;
 }
 
+a, button, .header-search, .side-search-btn, .side-search-bar {
+  outline: 0!important;
+}
+
+object, embed {
+  outline: 0!important;
+}
+
+body {
+  background-color: #252627;
+}
+
 /* =======================
   
       Pre Loader
@@ -69,11 +81,12 @@ html {
 
 .main-header {
   height: 7vh;
-  background-color: #d8d8d8;
-  border-bottom: 2px solid #979797;
+  background-color: #181818;
+  border-bottom: 2px solid #ff1468;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .main-header .logo {
@@ -87,6 +100,7 @@ html {
 
 .logo a {
   text-decoration: none;
+  color: #ff1468;
 }
 
 .burger {
@@ -99,16 +113,46 @@ html {
   width: 25px;
   height: 3px;
   margin: 5px;
-  background-color: black;
+  background-color: #ff1468;
   transition: all 0.3s ease;
 }
 
+.header-search {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.MuiSlider-root {
+  color: #ff1468!important;
+}
+
+.MuiSlider-markLabel {
+  color: white!important;
+}
+
+.MuiGrid-container {
+  background-color: #252627;
+}
+
 .header-search-btn {
-  background-color: #52606d;
-  color: #ffffff;
-  font-size: 14px;
   letter-spacing: 2px;
-  /* margin-left: 1%; */
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #ff1468;
+  color: white !important;
+  font-size: 14px;
+  font-weight: 600;
+  width: 90px;
+  border: 1px solid white;
+  text-transform: uppercase!important;
+  cursor: pointer;
+}
+
+.header-search-btn:hover {
+  background: white;
+  color: #ff1468!important;
+  border: 2px solid #ff1468;
 }
 
 /* =======================
@@ -121,13 +165,13 @@ html {
   display: flex;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  background-color: #d8d8d8;
-  border-right: 2px solid #979797;
+  background-color: #181818;
   flex-direction: column;
   width: 280px;
   min-width: 280px;
   height: 93vh;
   z-index: 99999;
+  margin-top: -8px
 }
 
 .nav-links {
@@ -144,6 +188,9 @@ html {
 
 .nav-links h5 {
   margin-bottom: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
 }
 
 .nav-links li {
@@ -165,16 +212,28 @@ html {
   justify-content: center;
   bottom: 0px;
   position: absolute;
-  background-color: #bababa;
-  border: 2px solid #979797;
+  background-color: #181818;
 }
 
 .submit button {
-  width: 100%;
-  background-color: #52606d;
-  color: #ffffff;
-  font-size: 14px;
   letter-spacing: 2px;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #ff1468;
+  color: white !important;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid white;
+  text-transform: uppercase!important;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit button:hover {
+  background: white;
+  color: #ff1468!important;
+  border: 2px solid #ff1468;
 }
 
 .side-nav-search {
@@ -183,11 +242,31 @@ html {
   top: 25px;
 }
 
-.side-nav-search button {
-  background-color: #52606d;
-  color: #ffffff;
-  font-size: 14px;
+.side-search-bar {
+  padding: 5px;
+  border-radius: 15px;
+  width: 150px!important;
+}
+
+.side-search-btn {
   letter-spacing: 2px;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #ff1468;
+  color: white !important;
+  font-size: 14px;
+  font-weight: 600;
+  width: 90px;
+  border: 1px solid white;
+  text-transform: uppercase!important;
+  cursor: pointer;
+}
+
+.side-search-btn:hover {
+  background: white;
+  color: #ff1468!important;
+  border: 2px solid #ff1468;
 }
 
 /* =======================
@@ -206,7 +285,11 @@ html {
 }
 
 .MuiPaper-root {
-  box-shadow: 2px 3px 8px 0px #2e323b !important;
+  box-shadow: 2px 3px 8px 0px rgba(105, 172, 229, 0.51)!important;
+}
+
+.MuiTypography-subtitle1 {
+  color: #ff1468!important;
 }
 
 /* =======================
@@ -239,8 +322,7 @@ html {
     left: 0px;
     height: 93vh;
     top: 7vh;
-    background-color: #d8d8d8;
-    border-right: solid 2px #979797;
+    background-color: #181818;
     display: flex;
     flex-direction: column;
     padding-left: 35px;
@@ -249,6 +331,7 @@ html {
     transform: translateX(-100%);
     transition: transform 0.5s ease-in;
     padding-left: 0;
+    margin-top: 0;
   }
   .nav-links li {
     opacity: 0;

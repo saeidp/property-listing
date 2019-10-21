@@ -271,8 +271,8 @@ export function Main(): JSX.Element {
           </ul>
 
           <form className='side-nav-search'>
-            <input type='search' placeholder='Title' onChange={updateSearch} />
-            <button type='button' onClick={handleSeach}>
+            <input className='side-search-bar' type='search' placeholder='Title' onChange={updateSearch} />
+            <button className='side-search-btn' type='button' onClick={handleSeach}>
               Search
             </button>
           </form>
