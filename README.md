@@ -18,7 +18,7 @@ Done, now enjoy!
 ## **Technology:**
 * ### **TypeScript**
 * ### **React**
-    * Custom hooks ( *static, effect* )
+    * Custom hooks ( *useState, useEffect* )
 * ### **Material UI**
     * Material Snackbars, Card, createStyles, makeStyles, Typography, CircularProgress, CardMedia, CardActionArea, CardContent, CardActions, IconButton, Collapse, FavoriteIcon, ExpandMoreIcon, clsx
 * ### **CSS ( *Animations* )**
