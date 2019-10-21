@@ -122,18 +122,6 @@ body {
   border-radius: 15px;
 }
 
-.MuiSlider-root {
-  color: #ff1468!important;
-}
-
-.MuiSlider-markLabel {
-  color: white!important;
-}
-
-.MuiGrid-container {
-  background-color: #252627;
-}
-
 .header-search-btn {
   letter-spacing: 2px;
   margin-left: 5px;
@@ -290,6 +278,22 @@ body {
 
 .MuiTypography-subtitle1 {
   color: #ff1468!important;
+}
+
+.MuiSlider-root {
+  color: #ff1468!important;
+}
+
+.MuiSlider-markLabel {
+  color: white!important;
+}
+
+.MuiGrid-container {
+  background-color: #252627;
+}
+
+.MuiSvgIcon-root {
+  color: #ff1468;
 }
 
 /* =======================
