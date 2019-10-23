@@ -159,8 +159,9 @@ export function Main(): JSX.Element {
   const handlePriceChange = (event: any, newValue: any) => {
     setPrice(newValue);
   };
-  navSlide();
+
   useEffect(() => {
+    navSlide();
     const fetch = () => {
       setIsLoading(true);
       try {
