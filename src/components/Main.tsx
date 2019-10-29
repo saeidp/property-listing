@@ -182,7 +182,7 @@ export function Main(): JSX.Element {
           }, 1000);
         }
       } catch (e) {
-        console.log('error fetchProjectVessels:', e);
+        console.log('error fetchOffice:', e);
       }
     };
     fetch();
